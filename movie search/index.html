@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .search-container {
+            max-width: 500px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+        .search-container input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin-right: 10px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .movie-details {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .movie-details p {
+            font-size: 18px;
+        }
+        .no-movie {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Search Database</h1>
+    
+    <div class="search-container">
+        <input type="text" id="movieTitle" placeholder="Enter movie title...">
+        <button onclick="searchMovie()">Search</button>
+    </div>
+    
+    <div class="movie-details" id="movieDetails"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
